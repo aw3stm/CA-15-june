@@ -1,17 +1,45 @@
-*{
+*,
+*::before,
+*::after{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
-
 :root{
-font-size: 16px;
+  font-size: 0.8rem;
+  font-family: 'albert sans', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  --color-primary: #FFF;
+ 
+  /* Dynamic */
+  --padding-d-l-v: calc(2rem + 12vh);
+  --padding-d-l-h: calc(2rem + 12vw);
+
+  --padding-d-mc-v: calc(1rem + 4vh);
+  --padding-d-mc-h: calc(1rem + 4vw);
+
+  --padding-d-m-v: calc(1rem + 2vh);
+  --padding-d-m-h: calc(1rem + 2vw);
+
+  --padding-d-s-h: calc(1rem + 1vw);
+  --padding-d-s-v: calc(1rem + 1vh);
+
+  /* Static */
+  --padding-st-l-h: 3rem;
+  --padding-st-l-v: 2rem;
+
+  --padding-st-m-h: 2.5rem;
+  --padding-st-m-v: 1.5rem;
+
+  --padding-st-s-h: 2rem;
+  --padding-st-s-v: 1rem;
 }
 
+
 body{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-line-height: 1.5;
+
+
 }
 
 
