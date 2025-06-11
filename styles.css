@@ -55,6 +55,9 @@ box-sizing: border-box;
   --font-family-heading: 'alexandria';
   --font-family-primary: 'albert sans';
 
+
+  --btn-padding-primary: 0.99rem;
+  --btn-padding-secondary: 1rem;
 }
 
 
@@ -108,26 +111,27 @@ font-size: var(--font-size-st-sc);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 2rem;
 }
 
 .header__logo img{
-  width: 60%;
-  height: auto;
+  width: 5rem;
+  
 }
 
 .header__nav{
   color: #000;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
 
 .header__nav--links{
   color: #000;
-  font-size: var(--font-size-st-sc);
+  font-size: var(--font-size-st-s);
   transition: all 0.1s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .header__nav--links:hover{
@@ -136,7 +140,7 @@ font-size: var(--font-size-st-sc);
 
 .header__icons{
   display: flex;
-  gap: 1rem;
+  gap: .7rem;
 }
 
 
@@ -186,8 +190,8 @@ font-size: var(--font-size-st-sc);
 
 .footer__content--newsletter a{
   background-color: beige;
-  padding: var(--padding-d-s-v);
-  border-radius: 2rem;
+  padding: var(--btn-padding-primary);
+  border-radius: 3rem;
   color: #000;
   font-size: var(--font-size-st-s);
   font-weight: 500;
