@@ -30,6 +30,16 @@
   gap: 2rem;
 }
 
+.cart--item__details h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.cart--item__details h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .cart--item__change,
 .cart--item__remove {
   border: .8px solid lightgrey;
@@ -39,13 +49,7 @@
   margin-top: 1rem;
 }
 
-.cart--item__change {
-  justify-self: start;
-}
 
-.cart--item__remove {
-justify-self:start;
-}
 
 .cart--item__price span {
   display: block;

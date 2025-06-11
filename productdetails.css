@@ -1,0 +1,37 @@
+.product__wrapper { 
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  
+  
+  
+}
+
+
+.product__details {
+  display: flex;
+  align-items: center;
+  gap: 1rem 2rem;
+  box-shadow: 1px 2px 25px 4px lightgrey;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.prod__jackets {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.8rem;
+  gap: 1rem;
+  max-width: 8rem;
+}
+
+.product__details img {
+  max-width: 16rem;
+  border-radius: 1.5rem;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column; 
+}

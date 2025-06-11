@@ -93,9 +93,6 @@ li{
 
 --------------*------------------*--------------*------------------*/
 
-
-
-
 .section__title {
   font-size: var(--font-size-d-sc);
   font-weight: 900;
@@ -105,7 +102,6 @@ li{
 font-size: var(--font-size-st-sc);
 }
 
-
 .header{
   padding: var(--padding-d-m-v) var(--padding-d-l-h);
   display: flex;
@@ -114,8 +110,7 @@ font-size: var(--font-size-st-sc);
 }
 
 .header__logo img{
-  width: 5rem;
-  
+  max-width: 5rem;  
 }
 
 .header__nav{
@@ -144,14 +139,12 @@ font-size: var(--font-size-st-sc);
 }
 
 
-
-
 .footer {
   background-color: var(--rainy-color);
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: var(--padding-d-l-v);
+  padding: 40px 30px 12px 30px;
   color: #FFF;
 }
 
@@ -207,8 +200,59 @@ font-size: var(--font-size-st-sc);
 .footer__copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
+
+.footer__copyright h3{
+font-size: 0.8rem;
+font-weight: 300;
+}
+
+/*----------------**Primary button styles**-------------****/
+.buy__btn {
+  background-color: var(--rainy-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 31.25rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 6rem;
+  height: 2.7rem;
+  font-weight: 600;
+  font-family: 'albert sans';
+  border: 0.063rem solid transparent;
+  white-space: normal;
+  margin: 0.625rem 0 0.625rem 0.625rem; 
+}
+
+.primary__btn {
+  background-color: var(--rainy-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 28rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 14rem;
+  height: 2.7rem;
+  font-weight: 600;
+  font-family: 'albert sans';
+  border: 0.063rem solid transparent;
+}
+
+.primary__btn a,
+.buy__btn a {
+  color: #FFF;                              
+}
+
+.primary__btn:hover,
+.buy__btn:hover {
+  background-color: rgba(47, 101, 103, 0.34);
+  color: var(--rainy-color); 
+}
+
+
+
 
 
