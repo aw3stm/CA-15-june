@@ -1,8 +1,6 @@
 
 .products {
-  box-shadow: 2px 2px 20px 2px lightgrey;
   padding: 5rem;
-  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

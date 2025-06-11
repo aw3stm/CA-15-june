@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 
   <title>RainyDays | Home</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="cart.css">
   <link rel="stylesheet" href="styles.css">
 </head>
     <body>
@@ -42,6 +42,46 @@
                 </figure>             
           </div>
       </header>
+      <main class="cart section__padding">
+        <h1 class="cart--title">Checkout</h1>
+
+        <section class="cart__items">
+          <div class="cart--item">
+            <figure class="cart--item__img">
+                <img src="/images/product-img/green-jacket-closed-front.jpg" alt="Green rain jacket article: Alex RD.2">
+            </figure>
+            <div class="cart--item__details">
+              <h2 class="cart--item__title">Alex rd.2 rain jacket</h2>
+              <h3 class="cart--item__color">Green/Black</h3>
+              <h3 class="cart--item__size">Size: M</h3>
+              <a class="cart--item__change" href="#">Change product</a>
+              <a class="cart--item__remove" href="#">Remove product</a>
+            </div>
+
+            <p class="cart--item__price">Price<span>&dollar;85</span></p>
+
+            <div class="cart--item__qty">
+              <p>Quantity</p>
+              <input type="number" placeholder="1">
+            </div>
+          </div>
+        </section>
+        <aside class="cart__summary">
+          <div>
+            <h2 class="cart__summary--summary">Summary</h2>
+            <p class="cart__summary--sub">Subtotal<span>&dollar;85</span></p>
+            <p class="cart__summary--deliv">Delivery <span>&dollar;8</span></p>
+            <p class="cart__summary--tax">Taxes <span>&dollar;0</span></p>
+            <h3 class="cart__summary--tot">Total <span>&dollar;93</span></h3>
+          </div>
+          <div>
+            <input type="submit" value="Guest Checkout">
+            <input type="submit" value="Member Checkout">
+            <p class="cart__summary--bonus">You are <span>&dollar;15</span> away from free shipping</p>
+          </div>
+          
+        </aside>
+      </main>
 
 
 
