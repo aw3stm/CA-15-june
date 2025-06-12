@@ -71,6 +71,11 @@
   align-self: flex-end; 
 }
 
+.card--buy:hover {
+  background-color: rgba(47, 101, 103, 0.34);
+  color: var(--rainy-color);  
+}
+
 .rain__container {
   position: relative;
   text-align: center;
