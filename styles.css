@@ -65,9 +65,7 @@ body{
 font-family: var(--font-family-primary);
 line-height: 1.5;
 background-color: var(--color-primary);
-
 height: 100vh;
-
 }
 
 main{
@@ -75,12 +73,15 @@ main{
 }
 
 .section__padding{
-  padding: var(--padding-d-m-h) var(--padding-d-l-v)
+padding: var(--padding-d-m-h) var(--padding-d-l-v)
 }
 
 a{
   text-decoration: none;
   border-radius: 1rem;
+  font-family: 'albert sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 li{
@@ -110,7 +111,7 @@ font-size: var(--font-size-st-sc);
 }
 
 .header__logo img{
-  max-width: 5rem;  
+  width: 4.5rem;  
 }
 
 .header__nav{
@@ -140,12 +141,12 @@ font-size: var(--font-size-st-sc);
 
 
 .footer {
-  background-color: var(--rainy-color);
+  background-color: rgba(255, 246, 237, 1);
   display: flex;
   flex-direction: column;
   gap: 4rem;
   padding: 40px 30px 12px 30px;
-  color: #FFF;
+  color: #000;
 }
 
 .footer__content {
@@ -177,18 +178,9 @@ font-size: var(--font-size-st-sc);
 .footer__content--newsletter {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
-.footer__content--newsletter a{
-  background-color: beige;
-  padding: var(--btn-padding-primary);
-  border-radius: 3rem;
-  color: #000;
-  font-size: var(--font-size-st-s);
-  font-weight: 500;
-}
 .footer__content--socials,
 .footer__content--socials__icons {
   display: flex;
@@ -208,19 +200,18 @@ font-size: 0.8rem;
 font-weight: 300;
 }
 
-/*----------------**Primary button styles**-------------****/
+/****----------------**Primary button styles**-------------****/
 .buy__btn {
   background-color: var(--rainy-color);
   border: none;
   cursor: pointer;
-  border-radius: 1.7rem;
+  border-radius: 1.3rem;
   letter-spacing: 0.125rem;
   text-align: center;
-  text-transform: uppercase;
   min-width: 6rem;
   height: 2.7rem;
-  font-weight: 600;
-  font-family: 'albert sans';
+  font-weight: 500;
+  font-family: 'albert sans', sans-serif;
   border: 0.063rem solid transparent;
   white-space: normal;
   margin: 0.625rem 0 0.625rem 0.625rem; 
@@ -228,22 +219,18 @@ font-weight: 300;
 
 .primary__btn {
   background-color: var(--rainy-color);
-  border: none;
   cursor: pointer;
-  border-radius: 1rem;
-  letter-spacing: 0.125rem;
-  text-align: center;
-  text-transform: uppercase;
-  min-width: 14rem;
-  height: 2.7rem;
-  font-weight: 600;
-  font-family: 'albert sans';
+  border-radius: 1.3rem;
+  min-width: 10rem;
+  height: 3rem;
   border: 0.063rem solid transparent;
+  font-family: 'alberts sans', sans-serif;
 }
 
 .primary__btn a,
 .buy__btn a {
-  color: #FFF;                              
+  color: #FFF;
+  text-align: center;                              
 }
 
 .primary__btn:hover,

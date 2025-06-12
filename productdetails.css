@@ -1,6 +1,6 @@
 .product__wrapper { 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   justify-self: center; 
 }
 
@@ -36,7 +36,6 @@
   border-radius: 1.5rem;
 }
 
-
 .card__img img {
   display: grid;
   grid-column: 1 / 2;
@@ -57,3 +56,33 @@
   gap: .7rem;
   grid-row: 2 / 3;
 }
+
+.radio-container {
+  display: grid;
+  max-width: min-content;
+  justify-self: start;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.radio-btn {
+  display: grid;
+  grid-row: 1 / -1;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: .9rem;
+  border: 1px solid #6C6969;
+  border-radius: 50%;
+  margin: 0.625rem;
+  margin-left: 0;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: rgba(17, 51, 64, 0.8);
+  cursor: pointer;
+}
+
+.radio-btn.checked {
+background-color: rgba(17, 51, 64, 0.57);
+color: #FFF;
+}
+

@@ -44,8 +44,9 @@
       </header>
 
 
-      <main class="section__padding">
-          <div class="product__wrapper">
+      <main>
+        <section class="product-details__section section__padding">
+          <div class="product__wrapper ">
             <div class="product__details"> 
                 <figure class="card__img">
                     <img src="images/product-img/green-jacket-model.jpg" alt="Model with green rain jacket">
@@ -56,23 +57,39 @@
                     <p class="prod__info">Green</p>
                     <p class="prod__info">Unisex | Hiking/Lifestyle</p>
                 </div>
-                <div class="btn-con">
-                <button class="primary__btn">
-                  <a href="cart.html">Add to cart</a>
-                </button>
-                <button class="primary__btn">
-                <a href="cart.html">Shopping bag</a>
-              </button>
-            </div>
+             
           
           <div class="prod__jackets">
                     <img class="jkt-1" src="images/product-img/green-jacket-open-front.jpg" alt="Green rain jacket, product photo">
                     <img class="jkt-2"src="images/product-img/green-jacket-model-back.jpg" alt="Green rain jacket, product photo">
                     <img class="jkt-3" src="images/product-img/green-jacket-closed-front.jpg" alt="Green rain jacket, product photo">
                   </div> 
-              </div>  
-            </div>          
-      </main>
+              </div>
+                <div class="btn-con">
+                <button class="primary__btn">
+                  <a href="cart.html">Add to cart</a>
+                </button>
+                <button class="primary__btn">
+                  <a href="cart.html">Shopping bag</a>
+                </button>
+            </div>            
+            <div class="radio-container">
+                <input type="radio" name="size" value="xs" hidden id="xs-size">
+                <label for="xs-size" class="radio-btn">xs</label>
+                <input type="radio" name="size" value="s" hidden id="s-size">
+                <label for="s-size" class="radio-btn">s</label>
+                <input type="radio" name="size" value="m" checked hidden id="m-size">
+                <label for="m-size" class="radio-btn checked">m</label>
+                <input type="radio" name="size" value="l" hidden id="l-size">
+                <label for="l-size" class="radio-btn">l</label>
+                <input type="radio" name="size" value="xl" hidden id="xl-size">
+                <label for="xl-size" class="radio-btn">xl</label>
+                <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+                <label for="xxl-size" class="radio-btn">xxl</label>
+          </div>
+        </div>
+      </section>          
+    </main>
 
 
 
@@ -112,9 +129,9 @@
      
       <div class="footer__content--newsletter">
         <h2 class="footer__newsletter--title">Stay update</h2>
-        <div>
-          <a href="#">Sign our newsletter</a>
-        </div>
+          <button class="primary__btn">
+              <a href="#">Sign our newsletter</a>
+          </button>
       </div>
 
       <div class="footer__content--socials">
