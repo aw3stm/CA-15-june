@@ -4,7 +4,6 @@
   justify-self: center; 
 }
 
-
 .product__details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -39,7 +38,7 @@
 .card__img img {
   display: grid;
   grid-column: 1 / 2;
-  max-width: 13rem;
+  width: 13rem;
   border-radius: 1.5rem;
   justify-self: end;
 }
@@ -47,8 +46,9 @@
 .btn-con {
   display: grid;
   grid-row: 2/ 3;
-  justify-self: start;
-  gap: 1rem;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  align-self: flex-start;
 }
 
 .prod__text {

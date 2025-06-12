@@ -42,14 +42,16 @@
 
 .cart--item__change,
 .cart--item__remove {
-  border: .8px solid lightgrey;
-  padding: 0.6rem 1.3rem;
   background-color: var(--rainy-color);
+  border: none;
   color: #FFF;
-  margin-top: 1rem;
+  padding: 0.9rem;
+  font-family: 'albert sans', sans-serif;
+  font-size: 1.2rem;
+  width: 15rem;
+  border-radius: 3rem;
+  text-align: center;
 }
-
-
 
 .cart--item__price span {
   display: block;
@@ -60,15 +62,17 @@
 
 .cart--item__qty input {
   font-weight: 600;
+  font-size: 1.2rem;
   width: 25%;
   padding: 0.8rem;
   margin-top: 1rem;
+  border-radius: .5rem;
+  font-family: 'albert sans', sans-serif; 
 }
 
 .cart__summary {
   grid-column: 2 / 3;
   grid-row: 2 / -1;
-
   display: grid;
   grid-template-rows: repeat(3, min-content);
   gap: 3rem;
@@ -78,9 +82,11 @@
   background-color: var(--rainy-color);
   border: none;
   color: #FFF;
-  padding: 0.8rem;
-  font-family: 'albert sans';
-  font-size: 1rem;
+  padding: 0.9rem;
+  font-family: 'albert sans', sans-serif;
+  font-size: 1.2rem;
+  width: 20rem;
+  border-radius: 3rem;
 }
 
 .cart__summary > div:last-child {
@@ -92,15 +98,20 @@
 .cart__summary--sub,
 .cart__summary--deliv,
 .cart__summary--tax,
-.cart__summary--tot {
+.cart__summary--tot, h2 {
   display: grid;
   grid-template-columns: 1fr min-content;
-  gap: 1rem;
+  gap: 1.3rem;
   margin-bottom: 1rem;
   font-weight: 600;
  }
 
  .cart__summary--bonus {
   font-weight: 500;
+  font-size: 1.3rem;
   margin: 0;
+ }
+
+ .cart__summary--bonus span {
+  color: var(--rainy-color);
  }

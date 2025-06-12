@@ -144,15 +144,16 @@ font-size: var(--font-size-st-sc);
   background-color: rgba(255, 246, 237, 1);
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   padding: 40px 30px 12px 30px;
   color: #000;
 }
 
 .footer__content {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 18rem;
 }
 
 .footer__content--about,
@@ -171,8 +172,8 @@ font-size: var(--font-size-st-sc);
 .footer__content--support ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: .5rem;
 }
 
 .footer__content--newsletter {
@@ -203,38 +204,39 @@ font-weight: 300;
 /****----------------**Primary button styles**-------------****/
 .buy__btn {
   background-color: var(--rainy-color);
-  border: none;
   cursor: pointer;
   border-radius: 1.3rem;
   letter-spacing: 0.125rem;
   text-align: center;
-  min-width: 6rem;
-  height: 2.7rem;
+  width: 6rem;
+  height: 3rem;
   font-weight: 500;
   font-family: 'albert sans', sans-serif;
   border: 0.063rem solid transparent;
-  white-space: normal;
   margin: 0.625rem 0 0.625rem 0.625rem; 
 }
 
 .primary__btn {
   background-color: var(--rainy-color);
-  cursor: pointer;
-  border-radius: 1.3rem;
-  min-width: 10rem;
-  height: 3rem;
-  border: 0.063rem solid transparent;
   font-family: 'alberts sans', sans-serif;
+  letter-spacing: 0.100rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  width: 16rem;
+  height: 4.5rem;
+  border: 0.1rem solid var(--rainy-color);
+  
 }
 
 .primary__btn a,
 .buy__btn a {
   color: #FFF;
-  text-align: center;                              
+  text-align: center;
+  font-size: 1.4rem;                              
 }
 
 .primary__btn:hover,
-.buy__btn:hover {
+.buy__btn:hover{
   background-color: rgba(47, 101, 103, 0.34);
   color: var(--rainy-color); 
 }
