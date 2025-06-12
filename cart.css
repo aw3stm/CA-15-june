@@ -1,21 +1,23 @@
 .cart {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, min-content);
-  gap: 4rem;
-  padding: 4rem;
+  gap: 2rem;
+  padding: 0 10rem;
 }
 
-
 .cart--title {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
+  margin: 2rem 4.5rem;
+  font-size: 1.7rem;
 }
 
 .cart--item {
   display: grid;
-  grid-template-columns: 10rem repeat(3, 0.5fr);
-  gap: 1rem;
+  grid-template-columns: 12rem repeat(3, 0.5fr);
+  gap: 1.2rem;
+  justify-self: center;
+  background-color: rgb(253, 251, 248);
+  padding: 2rem;
+  border-radius: 1.7rem;
 }
 
 .cart--item__img img {
@@ -26,7 +28,7 @@
 
 .cart--item__details {
   display: grid;
-  grid-template-rows: repeat(3, min-content) 1fr;
+  grid-template-rows: repeat(4, max-content) 0.5fr;
   gap: 2rem;
 }
 
@@ -45,53 +47,49 @@
   background-color: var(--rainy-color);
   border: none;
   color: #FFF;
-  padding: 0.9rem;
+  padding: 0.7rem;
   font-family: 'albert sans', sans-serif;
   font-size: 1.2rem;
-  width: 15rem;
+  width: 12rem;
   border-radius: 3rem;
   text-align: center;
 }
 
-.cart--item__price span {
+.cart--item__price span, p {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
 }
 
 .cart--item__qty input {
-  font-weight: 600;
-  font-size: 1.2rem;
-  width: 25%;
-  padding: 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 2.7rem;
+  padding: 0.5rem;
   margin-top: 1rem;
-  border-radius: .5rem;
+  border-radius: .3rem;
   font-family: 'albert sans', sans-serif; 
 }
 
 .cart__summary {
-  grid-column: 2 / 3;
-  grid-row: 2 / -1;
   display: grid;
-  grid-template-rows: repeat(3, min-content);
-  gap: 3rem;
+  padding: 2.5rem;
+  gap: 1.7rem;
+  justify-self: center;
 }
 
 .cart__summary input {
   background-color: var(--rainy-color);
   border: none;
   color: #FFF;
-  padding: 0.9rem;
+  padding: .6rem;
   font-family: 'albert sans', sans-serif;
   font-size: 1.2rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 3rem;
-}
-
-.cart__summary > div:last-child {
-  display: grid;
-  gap: 2rem;
+  align-self: center;
+  justify-self: center;
 }
 
 
@@ -100,9 +98,8 @@
 .cart__summary--tax,
 .cart__summary--tot, h2 {
   display: grid;
-  grid-template-columns: 1fr min-content;
-  gap: 1.3rem;
-  margin-bottom: 1rem;
+  grid-template-columns: 2fr .2fr;
+  gap: 1.3rem; 
   font-weight: 600;
  }
 
