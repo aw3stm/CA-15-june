@@ -7,8 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo/favicon-16x16.png"/>
 
-  <title>RainyDays | Home</title>
+  <title>RainyDays | Payment</title>
   <link rel="stylesheet" href="payment.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,9 +22,9 @@
             <nav>
               <div class="header__nav">  
               <a class="header__nav--links" href="products.html">Women</a>
-              <a class="header__nav--links" href="productdetails.html">Men</a>
-              <a class="header__nav--links" href="cart.html">News</a>
-              <a class="header__nav--links" href="payment.html">Sale</a>
+              <a class="header__nav--links" href="comingsoon.html">Men</a>
+              <a class="header__nav--links" href="comingsoon.html">News</a>
+              <a class="header__nav--links" href="comingsoon.html">Sale</a>
               </div> 
             </nav>
 
@@ -38,7 +39,7 @@
                 <img src="./vectors/icons-navbar/map-pin.svg" alt="pin-icon">
                 </figure>
                 <figure class="header__icons--icon">               
-                <img src="./vectors/icons-navbar/shopping-bag.svg" alt="bag-icon">
+                <a href="cart.html"><img src="./vectors/icons-navbar/shopping-bag.svg" alt="bag-icon"></a>
                 </figure>             
           </div>
       </header>
@@ -88,14 +89,14 @@
         <h1 class="pay__checkout--title">Payment method</h1>         
           
           <form class="pay__checkout--radio">
-              <input type="radio"> 
+              <input type="radio" id="visa" name="payment"> 
                   <img src="vectors/payment-icons/visa_5968299.png" alt="Visa logo">
           
           
-              <input type="radio"> 
+              <input type="radio" id="mastercard" name="payment"> 
                   <img src="vectors/payment-icons/card_16174534.png" alt="Mastercard logo">
 
-              <input type="radio"> 
+              <input type="radio" id="amex" name="payment"> 
                   <img src="vectors/payment-icons/american_11378337.png" alt="Amex logo">
               </form>
             
@@ -117,9 +118,9 @@
                   <input type="text" placeholder="CVC*">             
                 </fieldset>
           </form>
-          <form class="pay__checkout--btn">
-            <a href="confirmation.html"><input type="submit" value="Place Order"></a>
-          </form> 
+          <button class="pay__checkout--btn">
+            <a href="confirmation.html">Place Order</a>
+          </button> 
       </section>
     </main>
   

@@ -65,11 +65,12 @@ body{
 font-family: var(--font-family-primary);
 line-height: 1.5;
 background-color: var(--color-primary);
-height: 100vh;
+height: 100%;
 }
 
 main{
-  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
 .section__padding{
@@ -82,16 +83,20 @@ a{
   font-family: 'albert sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
+  color: #FFF;
 }
 
 li{
   list-style: none;
 }
 
-
+.soon__h1 {
+  font-family: 'alexandria' sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
 
 /*------------*------------SECTION PADDING----------------*------------------*
-
 --------------*------------------*--------------*------------------*/
 
 .section__title {
@@ -104,14 +109,18 @@ font-size: var(--font-size-st-sc);
 }
 
 .header{
-  padding: var(--padding-d-m-v) var(--padding-d-l-h);
+  padding: var(--padding-d-s-v) var(--padding-d-l-h);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__logo img{
-  width: 4.5rem;  
+.header__logo img {
+  width: 4.7rem;  
+}
+
+.header__icons img {
+  width: 2rem;
 }
 
 .header__nav{
@@ -124,7 +133,7 @@ font-size: var(--font-size-st-sc);
 
 .header__nav--links{
   color: #000;
-  font-size: var(--font-size-st-s);
+  font-size: 1.3rem;
   transition: all 0.1s ease-in-out;
   text-transform: uppercase;
   font-weight: 600;
@@ -136,8 +145,10 @@ font-size: var(--font-size-st-sc);
 
 .header__icons{
   display: flex;
-  gap: .7rem;
+  gap: .8rem;
 }
+
+
 
 
 .footer {
@@ -151,6 +162,7 @@ font-size: var(--font-size-st-sc);
 
 .footer__content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 100%;

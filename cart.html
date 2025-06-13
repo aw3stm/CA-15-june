@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo/favicon-16x16.png"/>
 
   <title>RainyDays | Shopping bag</title>
   <link rel="stylesheet" href="cart.css">
@@ -20,9 +21,9 @@
             <nav>
               <div class="header__nav">  
               <a class="header__nav--links" href="products.html">Women</a>
-              <a class="header__nav--links" href="productdetails.html">Men</a>
-              <a class="header__nav--links" href="cart.html">News</a>
-              <a class="header__nav--links" href="payment.html">Sale</a>
+              <a class="header__nav--links" href="comingsoon.html">Men</a>
+              <a class="header__nav--links" href="comingsoon.html">News</a>
+              <a class="header__nav--links" href="comingsoon.html">Sale</a>
               </div> 
             </nav>
 
@@ -37,7 +38,7 @@
                 <img src="./vectors/icons-navbar/map-pin.svg" alt="pin-icon">
                 </figure>
                 <figure class="header__icons--icon">               
-                <img src="./vectors/icons-navbar/shopping-bag.svg" alt="bag-icon">
+                <a href="cart.html"><img src="./vectors/icons-navbar/shopping-bag.svg" alt="bag-icon"></a>
                 </figure>             
           </div>
       </header>
@@ -52,8 +53,10 @@
               <h2 class="cart--item__title">Alex rd.2 rain jacket</h2>
               <h3 class="cart--item__color">Green/Black</h3>
               <h3 class="cart--item__size">Size: M</h3>
-              <a class="cart--item__change" href="#">Change product</a>
-              <a class="cart--item__remove" href="#">Remove product</a>
+              <a href="products.html">
+              <button class="primary__btn">Change Product</button></a>
+              <a href="products.html">
+              <button class="primary__btn">Remove Product</button></a>
             </div>
 
             <p class="cart--item__price">Price<span>&dollar;85</span></p>
@@ -64,17 +67,19 @@
             </div>
           </div>
         </section>
-        <div class="cart__summary">
-            
+
+
+        <div class="cart__summary">       
             <h2 class="cart__summary--summary">Summary</h2>
             <p class="cart__summary--sub">Subtotal<span>&dollar;85</span></p>
             <p class="cart__summary--deliv">Delivery <span>&dollar;8</span></p>
             <p class="cart__summary--tax">Taxes <span>&dollar;0</span></p>
             <h3 class="cart__summary--tot">Total <span>&dollar;93</span></h3>
-          
-          
-            <input type="submit" value="Guest Checkout">
-            <input type="submit" value="Member Checkout">
+            
+            <a class="cart__summary--btn" href="payment.html">
+              <button class="primary__btn">Guest Checkout</button>
+            </a>
+            <a class="cart__summary--btn" href="payment.html"><button class="primary__btn">Member Checkout</button></a>
             <p class="cart__summary--bonus">You are <span>&dollar;15</span> away from free shipping</p>              
         </div>
       </main>

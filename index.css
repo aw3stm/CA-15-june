@@ -5,6 +5,8 @@
   gap: 2em;
   justify-content: center;
   background: linear-gradient(121deg, #FFF6ED 23.7%, #F1F1F1 137.95%);
+  box-shadow: 1px 2px 25px 4px lightgrey;
+  border-radius: 1.5rem;
 }
 
 .hero__content {

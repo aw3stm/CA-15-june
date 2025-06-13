@@ -1,0 +1,43 @@
+
+.conf__content {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding: 10rem;
+  box-shadow: 1px 2px 25px 4px lightgrey;
+  margin: 0 0 10rem 0;
+}
+
+.mountains {
+  width: 30rem;
+  aspect-ratio: 4/3;
+  justify-self: end; 
+}
+
+.conf--h1 {
+  display: grid;
+  width: max-content;
+  justify-self: center;
+  font-family: 'alexandria', sans-serif;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.conf__texts h2 {
+  margin: .8rem;
+  font-weight: 600;
+}
+
+.conf__texts h3 {
+  margin: .7rem;
+  font-weight: 300;
+}
+
+.conf__texts h3 span{
+  
+  font-weight: 600;
+}
+  
+
+

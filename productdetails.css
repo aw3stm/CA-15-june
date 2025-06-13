@@ -10,12 +10,14 @@
   align-items: center;
   gap: 1rem 2rem;
   box-shadow: 1px 2px 25px 4px lightgrey;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 1.5rem;
 }
 
 .prod__jackets {
   display: grid;
+  grid-column: 2 / span 1;
+  align-items: center;
   border-radius: 1.8rem;
   gap: 1rem;
 }
@@ -86,8 +88,6 @@ background-color: rgba(17, 51, 64, 0.57);
 color: #FFF;
 }
 
-
-
 .product__info{
   font-family: var(--font-family-heading);
   font-size: 1.6rem;
@@ -136,6 +136,8 @@ color: #FFF;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  box-shadow: 1px 2px 25px 4px lightgrey;
+  border-radius: 1.5rem;
 }
 
 .member__signup {
