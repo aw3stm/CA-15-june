@@ -6,6 +6,26 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
+@media screen and (max-width: 900px){
+  .header__nav--links{
+    display: none;
+  }
+  .section__padding{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header__nav--links{
+    display: none;
+  }
+ .section__padding{
+    padding: 0;
+ }
+}
+
+
 :root{
  
   --rainy-color: #2F515E;
@@ -66,7 +86,9 @@ font-family: var(--font-family-primary);
 line-height: 1.5;
 background-color: var(--color-primary);
 height: 100%;
+width: 100vw;
 }
+
 
 main{
   display: grid;
@@ -147,8 +169,6 @@ font-size: var(--font-size-st-sc);
   display: flex;
   gap: .8rem;
 }
-
-
 
 
 .footer {
