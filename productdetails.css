@@ -86,3 +86,72 @@ background-color: rgba(17, 51, 64, 0.57);
 color: #FFF;
 }
 
+
+
+.product__info{
+  font-family: var(--font-family-heading);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product__cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 2rem;
+}
+
+.like__wrapper {
+  flex-wrap: wrap;
+  justify-self: center;
+  align-self: center;
+}
+
+.like__wrapper h2{
+  margin: 0 0 2rem 0; 
+}
+
+.product--card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 2rem;
+  box-shadow: 1px 2px 25px 4px lightgrey;
+  padding: 1rem;
+  border-radius: 1.5rem; 
+}
+
+.card__img img {
+  height: 100%;
+  width: 17rem;
+  object-fit:cover;
+  border-radius: 1rem;
+}
+
+.member__text {
+  width: 38rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member__signup {
+  justify-self: center;
+  background-color: rgba(179, 194, 192, 0.66);
+  border-radius: 1rem;
+}
+
+.member__signup h3 {
+  align-self: center;
+  font-size: 1.7rem;
+  font-family: 'alexandria', sans-serif;
+}
+
+.member__signup p {
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
