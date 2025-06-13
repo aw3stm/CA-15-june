@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 
   <title>RainyDays | Home</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="payment.css">
   <link rel="stylesheet" href="styles.css">
 </head>
     <body>
@@ -42,9 +42,86 @@
                 </figure>             
           </div>
       </header>
-  <main>   
-  
-  
+
+
+    <main class="payment-wrapper section__padding">
+        <section class="payment-checkout">
+          <h1 class="pay__h1">Payment</h1>
+
+          <form class="pay__checkout--form">
+            <h2 class="pay__checkout--title">Contact information</h2>
+
+            <fieldset class="pay__checkout--form__name">
+              <input type="text" placeholder="First name*">
+              <input type="text" placeholder="Last name*">
+            </fieldset>
+
+             <fieldset class="pay__checkout--form__address">
+              <input type="text" placeholder="Address*">
+              <input type="text" placeholder="Address Line 2">
+            </fieldset>
+
+             <fieldset class="pay__checkout--form__city">
+              <input type="text" placeholder="Postcode/Zip*">             
+            </fieldset>
+
+              <fieldset class="pay__checkout--form__country">
+              <select name="country" id="country">
+                <option>Sweden</option>
+                <option>Norway</option>
+                <option>Denmark</option>
+                <option>Finland</option>
+                <option>Island</option>
+              </select>
+              <input type="text" placeholder="City*">
+            </fieldset>
+
+             <fieldset class="pay__checkout--form__mail">
+              <input type="text" placeholder="E-mail*">             
+            </fieldset>
+          </form> 
+      </section>
+
+
+
+      <section class="payment-checkout--card">
+        <h1 class="pay__checkout--title">Payment method</h1>         
+          
+          <form class="pay__checkout--radio">
+              <input type="radio"> 
+                  <img src="vectors/payment-icons/visa_5968299.png" alt="Visa logo">
+          
+          
+              <input type="radio"> 
+                  <img src="vectors/payment-icons/card_16174534.png" alt="Mastercard logo">
+
+              <input type="radio"> 
+                  <img src="vectors/payment-icons/american_11378337.png" alt="Amex logo">
+              </form>
+            
+
+          <form class="pay__checkout--card-info">
+                <fieldset class="pay__checkout--form__card-name">
+                  <input type="text" placeholder="Full name*">             
+                </fieldset>
+
+                <fieldset class="pay__checkout--card-nr">
+                  <input type="text" placeholder="Card number*">             
+                </fieldset>
+
+                <fieldset class="pay__checkout--exp">
+                  <input type="text" placeholder="Exp./date*">             
+                </fieldset>
+
+                <fieldset class="pay__checkout--cvc">
+                  <input type="text" placeholder="CVC*">             
+                </fieldset>
+          </form>
+          <form class="pay__checkout--btn">
+            <a href="confirmation.html"><input type="submit" value="Place Order"></a>
+          </form> 
+      </section>
+    </main>
   
   
   
